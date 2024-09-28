@@ -1,35 +1,35 @@
 int main()
 {
-    //Опис змінніх логічного типу
+    //Description of variables of logical type
     bool isTrue = true;
     bool isFalse = false;
-
-    //Опис змінних цілого й дійсного типу
-
+    //Description of variables of integer and real type
+    
     int nC = 99;
         int nD = 99;
     float fltA = 36.7;
     float fltB = 56.2;
-
-    //Обчислення виразу
+    
+    //Evaluating an expression
    
     bool Rez1 = ((fltA || fltB) != (!(nC < nD)));
     bool Rez2 = ((nC || nD) != (!(fltA < fltB)));
-
-    // Опис константи за допомогою R-виразу
-
+    
+  // Defining a constant using an R-expression
+    
     const int CONST_VALUE = 5 + 3;
 
-    // Опис і ініціалізація змінної за допомогою R-виразу
+ // Declaring and initializing a variable using an R-expression
+    
     int result = 2 * 3 + 4;
 
-    int nB, nE; // опис змінних В та Е
-    nB = 27; //ініціалізуємо змінну nB значенням 27
-    nE = 6; // ініціалізуємо змінну nE значенням 6
-    int nl; // опис змінної С
-    int* pnl; // опис вказівної змінної
-    pnl = &nl; // ініціалізуємо вказівну змінну адресою змінної nC
-    *pnl = -16; // виконаємо операцію розіменування
+    int nB, nE; // description of variables B and E 
+    nB = 27; // description of variables B and E 
+    nE = 6; // description of variables B and E 
+    int nl; // description of variable l 
+    int* pnl; // description of the pointer variable
+    pnl = &nl; // initialize the pointer variable with the address of the variable nl
+    *pnl = -16; // initialize the pointer variable with the address of the variable nC
 
     const int CONSTA = 85; 
     bool bRez = ((CONSTA ^ ~nB) + *pnl) < (1 * (nE << sizeof(short)));
